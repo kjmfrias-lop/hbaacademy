@@ -1,0 +1,102 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-hbaacademy-dev-80b36-authRole",
+      "UnauthRoleArn": "arn:aws:iam::895454531446:role/amplify-hbaacademy-dev-80b36-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::895454531446:role/amplify-hbaacademy-dev-80b36-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-hbaacademy-dev-80b36-deployment",
+      "UnauthRoleName": "amplify-hbaacademy-dev-80b36-unauthRole",
+      "StackName": "amplify-hbaacademy-dev-80b36",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:895454531446:stack/amplify-hbaacademy-dev-80b36/eebf3620-70a8-11ef-a9a9-0691040b8f79",
+      "AmplifyAppId": "d25ufa9dh3xt3p"
+    }
+  },
+  "auth": {
+    "hbaacademy0d6ac9d2": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-hbaacademy-dev-80b36-deployment/amplify-cfn-templates/auth/hbaacademy0d6ac9d2-cloudformation-template.json",
+        "logicalId": "authhbaacademy0d6ac9d2"
+      },
+      "lastPushTimeStamp": "2024-09-12T01:53:27.670Z",
+      "output": {
+        "UserPoolId": "ap-southeast-1_8O5NKPog3",
+        "AppClientIDWeb": "5sv9u94et0jc74cuei6olh14cb",
+        "AppClientID": "3pvft39dh2quo0jh2u8aqv66c",
+        "IdentityPoolId": "ap-southeast-1:4610cbf4-2dd8-4250-9d17-106da8d60cf1",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-southeast-1:895454531446:userpool/ap-southeast-1_8O5NKPog3",
+        "IdentityPoolName": "hbaacademy0d6ac9d2_identitypool_0d6ac9d2__dev",
+        "UserPoolName": "hbaacademy0d6ac9d2_userpool_0d6ac9d2"
+      },
+      "lastPushDirHash": "Ov52ybgK1qbYify6PdgTMqV/Q6Y="
+    }
+  },
+  "api": {
+    "hbaacademy": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "72rd7n6lqnduredyqnj6fht7gy",
+        "GraphQLAPIEndpointOutput": "https://ekisy474wjguthsn4bmoe67uh4.appsync-api.ap-southeast-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-a6v3w2k5zzfffb7staxpefi24e"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-hbaacademy-dev-80b36-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apihbaacademy"
+      },
+      "lastPushTimeStamp": "2024-09-12T01:53:27.670Z",
+      "lastPushDirHash": "ntBuSjWB1CQkV/5hTsrlgKJSOf4="
+    }
+  },
+  "storage": {
+    "hbafiles": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2024-09-12T01:53:27.670Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-hbaacademy-dev-80b36-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storagehbafiles"
+      },
+      "output": {
+        "BucketName": "hbaacademyfiles80b36-dev",
+        "Region": "ap-southeast-1"
+      },
+      "lastPushDirHash": "kdMgz0Hst/o7aTtTAKUZEmYE4CI="
+    }
+  }
+}

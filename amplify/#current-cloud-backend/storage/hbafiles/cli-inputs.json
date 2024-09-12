@@ -1,0 +1,14 @@
+{
+  "resourceName": "hbafiles",
+  "policyUUID": "5a5da4e9",
+  "bucketName": "hbaacademyfiles",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
