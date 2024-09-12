@@ -20,6 +20,12 @@
       },
       "storage": {
         "hbafiles": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d25ufa9dh3xt3p",
+          "type": "manual"
+        }
       }
     }
   }

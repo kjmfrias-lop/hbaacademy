@@ -42,7 +42,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-hbaacademy-dev-80b36-deployment/amplify-cfn-templates/auth/hbaacademy0d6ac9d2-cloudformation-template.json",
         "logicalId": "authhbaacademy0d6ac9d2"
       },
-      "lastPushTimeStamp": "2024-09-12T01:53:27.670Z",
+      "lastPushTimeStamp": "2024-09-12T02:39:16.975Z",
       "output": {
         "UserPoolId": "ap-southeast-1_8O5NKPog3",
         "AppClientIDWeb": "5sv9u94et0jc74cuei6olh14cb",
@@ -78,7 +78,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-hbaacademy-dev-80b36-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apihbaacademy"
       },
-      "lastPushTimeStamp": "2024-09-12T01:53:27.670Z",
+      "lastPushTimeStamp": "2024-09-12T02:39:16.978Z",
       "lastPushDirHash": "ntBuSjWB1CQkV/5hTsrlgKJSOf4="
     }
   },
@@ -87,7 +87,7 @@
       "service": "S3",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
-      "lastPushTimeStamp": "2024-09-12T01:53:27.670Z",
+      "lastPushTimeStamp": "2024-09-12T02:39:16.981Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-hbaacademy-dev-80b36-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
         "logicalId": "storagehbafiles"
@@ -97,6 +97,20 @@
         "Region": "ap-southeast-1"
       },
       "lastPushDirHash": "kdMgz0Hst/o7aTtTAKUZEmYE4CI="
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-hbaacademy-dev-80b36-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2024-09-12T02:39:17.541Z",
+      "output": {},
+      "lastPushDirHash": "IQHwQDSTQCwpIiTM8yhIqX8jOWA="
     }
   }
 }
