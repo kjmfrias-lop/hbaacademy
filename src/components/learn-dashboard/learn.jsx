@@ -1,13 +1,31 @@
 // src/Learn.js
 import React from 'react';
+import Navbar from '../navbar/navbar';
+import Banner from '../banner/banner';
+import Sidebar from '../sidebar/sidebar';
+import MainContent from '../maincontent/maincontent';
 
 function Learn({ user, signOut }) {
   return (
-    <div>
-      <h1>Welcome to the Learn Page</h1>
-      <p>This is the page you see after logging in.</p>
-      <h1>Welcome, {user.username}</h1>
-      <button onClick={signOut}>Sign Out</button>
+    // <div className='app-container min-h-screen flex flex-col bg-gray-100'>
+     
+    //   <Navbar signOut={signOut} user={user}/>
+    //   <Banner />
+
+    //   <div className="flex flex-1">
+    //     <Sidebar />
+    //     <MainContent />
+    //   </div>
+    // </div>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <Banner />
+      <div className="flex flex-1">
+        <Sidebar />
+        <div className="flex-1 ml-64 mt-36 p-6 overflow-y-auto"> {/* Adjusted for sidebar and banner height */}
+          <MainContent />
+        </div>
+      </div>
     </div>
   );
 }
